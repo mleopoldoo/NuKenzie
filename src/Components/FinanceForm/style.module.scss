@@ -1,0 +1,26 @@
+.container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+  border: 1px solid var(--grey2);
+  padding: 30px 20px 30px 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.sectionContainer {
+  display: flex;
+  gap: 60px;
+  margin-top: 45px;
+}
+
+@media (max-width: 400px) {
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    margin-left: 20px;
+  }
+}

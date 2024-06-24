@@ -1,0 +1,21 @@
+.sectionContainer {
+  margin-left: 260px;
+  border: 1px solid var(--grey2);
+  margin-top: 20px;
+  padding: 30px 20px 30px 20px;
+}
+
+.divContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divP {
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .sectionContainer {
+    margin-left: 20px;
+  }
+}

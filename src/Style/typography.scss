@@ -1,0 +1,79 @@
+%title {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--fontPadrao);
+}
+
+.title1 {
+  @extend %title;
+  color: var(--grey4);
+}
+
+.title2 {
+  @extend %title;
+  color: var(--primary);
+}
+
+.title3 {
+  font-family: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: var(--grey3);
+}
+
+%subTitle {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--fontPadrao);
+}
+
+.subTitle1 {
+  @extend %subTitle;
+  color: var(--grey4);
+}
+
+.subTitle2 {
+  @extend %subTitle;
+  color: var(--grey3);
+}
+
+%input {
+  background-color: var(--grey1);
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  color: var(--grey3);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 315px;
+  border: none;
+}
+
+.input {
+  @extend %input;
+}
+
+.inputSelect {
+  @extend %input;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.subTitleEx {
+  @extend %subTitle;
+  color: var(--grey3);
+}
+
+@media (max-width: 400px) {
+  .input {
+    width: 320px;
+  }
+  .inputSelect {
+    width: 320px;
+  }
+
+  .title3 {
+    font-size: 16px;
+  }
+}
